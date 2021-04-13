@@ -26,12 +26,28 @@
     */
 
     //Carrega um usuário usando login e senha
+    /*
     $usuario = new Usuario();
     $usuario->login("joão", "1122"); 
     echo $usuario;
-    
+    */
 
+    // Criando um novo usuário
+    /* 
+    $aluno = new Usuario("brendo","1234");
+
+    $aluno->insert();
     
+    echo $aluno;    
+    */
+
+    $usuario = new Usuario();
+
+    $usuario->loadById(14);
+
+    $usuario->update("professor","!@#$%¨&*(");
+
+    echo $usuario;
 
      
 ?>
